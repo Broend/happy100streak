@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everything About U 💕</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #FFF0F5, #FFB6C1);
+    }
+
+    @keyframes heartBeat {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes streakFlame {
+
+      0%,
+      100% {
+        transform: scale(1) rotate(0deg);
+      }
+
+      50% {
+        transform: scale(1.2) rotate(5deg);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-pink-50 min-h-screen flex flex-col items-center justify-center p-4">
+  <div class="max-w-md w-full bg-white rounded-2xl shadow-xl overflow-hidden">
+    <div class="bg-gradient-to-r from-pink-400 to-pink-600 p-4 text-center relative">
+      <h1 class="text-2xl font-bold text-white animate-pulse">Everything About U 💕</h1>
+
+      <div class="absolute top-4 right-4">
+        <button id="musicToggle" class="text-white hover:text-pink-200 transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 gap-4 p-4">
+      <!-- Expanded Photo Collection -->
+      <div class="relative group">
+        <div class="absolute inset-0 bg-pink-500 opacity-0 group-hover:opacity-20 transition-opacity rounded-xl"></div>
+        <div class="relative transform transition-all group-hover:scale-105 group-hover:rotate-3 group-hover:shadow-lg">
+          <img src="images/1.jpg" alt="First Date" class="w-full h-80 object-cover rounded-xl">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
+            Sayangnyaa atuuuu
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="absolute inset-0 bg-pink-500 opacity-0 group-hover:opacity-20 transition-opacity rounded-xl"></div>
+        <div
+          class="relative transform transition-all group-hover:scale-105 group-hover:-rotate-3 group-hover:shadow-lg">
+          <img src="images/2.jpg" alt="Sunset Walk" class="w-full h-80 object-cover rounded-xl">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
+            Cantiknyaa atuuuuu
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="absolute inset-0 bg-pink-500 opacity-0 group-hover:opacity-20 transition-opacity rounded-xl"></div>
+        <div class="relative transform transition-all group-hover:scale-105 group-hover:rotate-2 group-hover:shadow-lg">
+          <img src="images/3.jpg" alt="Cozy Moments" class="w-full h-80 object-cover rounded-xl">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
+            Manisnyaa atuuuuuu
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="absolute inset-0 bg-pink-500 opacity-0 group-hover:opacity-20 transition-opacity rounded-xl"></div>
+        <div
+          class="relative transform transition-all group-hover:scale-105 group-hover:-rotate-2 group-hover:shadow-lg">
+          <img src="images/4.jpeg" alt="Adventure Together" class="w-full h-80 object-cover rounded-xl">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
+            Cinta nya atuuuuu
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="absolute inset-0 bg-pink-500 opacity-0 group-hover:opacity-20 transition-opacity rounded-xl"></div>
+        <div class="relative transform transition-all group-hover:scale-105 group-hover:rotate-3 group-hover:shadow-lg">
+          <img src="images/5.jpeg" alt="Special Memories" class="w-full h-80 object-cover rounded-xl">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
+            Dunia nya atuuuuu
+          </div>
+        </div>
+      </div>
+
+      <!-- New Additional Photos -->
+      <div class="relative group">
+        <div class="absolute inset-0 bg-pink-500 opacity-0 group-hover:opacity-20 transition-opacity rounded-xl"></div>
+        <div
+          class="relative transform transition-all group-hover:scale-105 group-hover:-rotate-3 group-hover:shadow-lg">
+          <img src="images/6.jpeg" alt="Birthday Celebration" class="w-full h-80 object-cover rounded-xl">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
+            Sasaatuuuuuuuu
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="absolute inset-0 bg-pink-500 opacity-0 group-hover:opacity-20 transition-opacity rounded-xl"></div>
+        <div class="relative transform transition-all group-hover:scale-105 group-hover:rotate-2 group-hover:shadow-lg">
+          <img src="images/7.jpeg" alt="Weekend Getaway" class="w-full h-80 object-cover rounded-xl">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
+            My Lovely gurllll
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="absolute inset-0 bg-pink-500 opacity-0 group-hover:opacity-20 transition-opacity rounded-xl"></div>
+        <div
+          class="relative transform transition-all group-hover:scale-105 group-hover:-rotate-2 group-hover:shadow-lg">
+          <img src="images/8.jpeg" alt="Romantic Dinner" class="w-full h-80 object-cover rounded-xl">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
+            My Sweetie gurllllll
+          </div>
+        </div>
+      </div>
+
+      <div class="relative group">
+        <div class="absolute inset-0 bg-pink-500 opacity-0 group-hover:opacity-20 transition-opacity rounded-xl"></div>
+        <div class="relative transform transition-all group-hover:scale-105 group-hover:rotate-3 group-hover:shadow-lg">
+          <img src="images/9.jpeg" alt="Holiday Together" class="w-full h-80 object-cover rounded-xl">
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 text-center">
+            My little gurllll
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Streak Section Remains the Same as Previous Version -->
+    <div class="bg-pink-100 p-4">
+      <div class="flex items-center justify-center space-x-6 mb-4">
+        <div class="text-center">
+          <div
+            class="w-20 h-20 bg-gradient-to-b from-red-500 to-orange-500 rounded-full flex items-center justify-center shadow-lg animate-[streakFlame_2s_infinite]">
+            <span class="text-white font-bold text-3xl">🔥</span>
+          </div>
+          <p class="mt-2 text-pink-600 font-semibold">Streak</p>
+        </div>
+        <div class="text-center">
+          <div class="flex items-center justify-center">
+            <span class="text-4xl font-bold text-pink-600" id="streakDays">100</span>
+            <span class="text-2xl ml-2 text-pink-500">+</span>
+          </div>
+          <p class="text-sm text-pink-500">Days Together</p>
+        </div>
+        <div class="text-center">
+          <div
+            class="w-20 h-20 bg-gradient-to-b from-pink-500 to-red-500 rounded-full flex items-center justify-center shadow-lg animate-[streakFlame_2s_infinite] animation-delay-1000">
+            <span class="text-white font-bold text-3xl">💖</span>
+          </div>
+          <p class="mt-2 text-pink-600 font-semibold">Love</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-6">
+        <p class="text-pink-600 font-semibold animate-[heartBeat_2s_infinite]">
+          Made with Sasa BF
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio Element -->
+  <audio id="backgroundMusic" loop>
+    <source src="muskk.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Music and Streak Functionality Remains the Same as Previous Version
+    const musicToggle = document.getElementById('musicToggle');
+    const backgroundMusic = document.getElementById('backgroundMusic');
+    let isMusicPlaying = false;
+
+    musicToggle.addEventListener('click', () => {
+      if (isMusicPlaying) {
+        backgroundMusic.pause();
+        musicToggle.innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+          </svg>
+        `;
+      } else {
+        backgroundMusic.play();
+        musicToggle.innerHTML = `
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+          </svg>
+        `;
+      }
+      isMusicPlaying = !isMusicPlaying;
+    });
+
+    function updateStreakDays() {
+      const streakDaysElement = document.getElementById('streakDays');
+      let currentStreak = parseInt(streakDaysElement.textContent);
+
+      currentStreak++;
+      streakDaysElement.textContent = currentStreak;
+    }
+
+    setInterval(updateStreakDays, 24 * 60 * 60 * 1000);
+  </script>
+</body>
+
+</html>
